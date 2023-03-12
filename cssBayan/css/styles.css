@@ -58,15 +58,12 @@ body {
 
 .bayan:hover .bayan__input:hover + label .plus-open,
 .bayan:active .bayan__input:hover + label .plus-open{
-    margin-left: auto;
     font-size: 0;
-    transition: all .5s ease-in;
 }
 
 .bayan:hover .bayan__input:hover + label .hide-open,
 .bayan:active .bayan__input:hover + label .hide-open{
     font-size: 30px;
-    transition: all .5s ease-in;
 }
 
 .bayan__item {
@@ -87,12 +84,11 @@ body {
 
 .bayan__input + label .bayan__image {
     max-width: 0;
-    transition: top .5s ease-in;
 }
 
 .bayan__input:checked + label .bayan__image {
     max-width: 400px;
-    transition: all .5s ease-in-out;
+    transition: all .5s ease-in;
     padding: 10px;
 }
 
@@ -102,8 +98,6 @@ body {
 
 .bayan__input:checked + label .plus-open {
     font-size: 0;
-    margin-left: auto;
-    transition: all .5s ease-in-out;
 }
 
 label {
@@ -128,16 +122,10 @@ label:hover {
 .title {
     font-family: Gilroy, sans-serif;
     font-size: 30px;
-    transition: all .5s ease-in-out;
 }
 
 .open {
     font-family: Gilroy, sans-serif;
-    transition: all .5s linear;
-}
-
-.plus-button {
-    margin-left: auto;
 }
 
 .hide-open {

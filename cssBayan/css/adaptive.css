@@ -1,1 +1,51 @@
+@media screen and (min-width: 600px) and (max-width: 1120px) {
+    .bayan {
+        max-width: 70%;
+    }
 
+    .header__title {
+        font-size: 30px;
+    }
+    .bayan__item {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 599px){
+    .bayan {
+        max-width: 70%;
+    }
+
+    .header__title {
+        font-size: 24px;
+    }
+
+    .bayan__item {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .bayan__title {
+        max-width: 100%;
+    }
+
+    .bayan:hover .plus-open {
+        font-size: 16px;
+    }
+
+    .bayan:hover .bayan__input:checked + label .hide-open {
+        font-size: 16px;
+    }
+
+    .bayan:hover .bayan__input:hover + label .hide-open,
+    .bayan:active .bayan__input:hover + label .hide-open{
+        font-size: 16px;
+    }
+}
