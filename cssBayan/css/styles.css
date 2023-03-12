@@ -34,12 +34,43 @@ body {
     border-radius: 60px;
 }
 
+.bayan:hover .title {
+    color: #14d9c4;
+}
+
+.bayan:hover .hide-open {
+    font-size: 0;
+    color:#08009a;
+    transition: all .5s ease-in;
+}
+
+.bayan:hover .plus-open {
+    margin-left: auto;
+    color: #14d9c4;
+    font-size: 30px;
+    transition: all .5s ease-in;
+}
+
+.bayan:hover .bayan__input:checked + label .hide-open {
+    font-size: 30px;
+    transition: all .5s ease-in;
+}
+
+.bayan:hover .bayan__input:hover + label .plus-open,
+.bayan:active .bayan__input:hover + label .plus-open{
+    margin-left: auto;
+    font-size: 0;
+    transition: all .5s ease-in;
+}
+
+.bayan:hover .bayan__input:hover + label .hide-open,
+.bayan:active .bayan__input:hover + label .hide-open{
+    font-size: 30px;
+    transition: all .5s ease-in;
+}
+
 .bayan__item {
     width: 1000px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
     border-top: 1px solid rgb(0, 0, 0);
     color: #6a0265;
 }
@@ -48,12 +79,43 @@ body {
     display: none;
 }
 
+.bayan__input:hover + label .bayan__image {
+    max-width: 400px;
+    padding: 10px;
+    transition: all .5s ease-in;
+}
+
+.bayan__input + label .bayan__image {
+    max-width: 0;
+    transition: top .5s ease-in;
+}
+
+.bayan__input:checked + label .bayan__image {
+    max-width: 400px;
+    transition: all .5s ease-in-out;
+    padding: 10px;
+}
+
+.bayan__input:checked + label .title {
+    color: #08009a;
+}
+
+.bayan__input:checked + label .plus-open {
+    font-size: 0;
+    margin-left: auto;
+    transition: all .5s ease-in-out;
+}
+
 label {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+label:hover {
+    cursor: pointer;
 }
 
 .bayan__title {
@@ -90,30 +152,4 @@ label {
     max-width: 400px;
     width: 100%;
     border-radius: 20px;
-}
-
-.bayan__input + label .bayan__image {
-    max-width: 0;
-    transition: all .5s ease-in-out;
-}
-
-.bayan__input:checked + label .bayan__image {
-    max-width: 400px;
-    transition: all .5s ease-in-out;
-    padding: 2em 0;
-}
-
-.bayan__input:checked + label .title {
-    color: #08009a;
-}
-
-.bayan__input:checked + label .plus-open {
-    font-size: 0;
-    margin-left: auto;
-    transition: all .5s ease-in-out;
-}
-
-.bayan__item:hover .bayan__image {
-    opacity: 1;
-    height: auto;
 }
