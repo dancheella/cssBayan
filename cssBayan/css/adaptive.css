@@ -1,27 +1,27 @@
-@media screen and (min-width: 600px) and (max-width: 1120px) {
+@media screen and (min-width: 37.5rem) and (max-width: 70rem) {
     .bayan {
         max-width: 70%;
     }
 
     .header__title {
-        font-size: 30px;
+        font-size: 1.9rem;
     }
     .bayan__item {
         max-width: 100%;
     }
 
     .title {
-        font-size: 25px;
+        font-size: 1.6rem;
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 599px){
+@media screen and (min-width: 18.75rem) and (max-width: 37.4375rem) {
     .bayan {
         max-width: 70%;
     }
 
     .header__title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .bayan__item {
@@ -29,23 +29,17 @@
     }
 
     .title {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .bayan__title {
         max-width: 100%;
     }
 
-    .bayan:hover .plus-open {
-        font-size: 16px;
-    }
-
-    .bayan:hover .bayan__input:checked + label .hide-open {
-        font-size: 16px;
-    }
-
     .bayan:hover .bayan__input:hover + label .hide-open,
-    .bayan:active .bayan__input:hover + label .hide-open{
-        font-size: 16px;
+    .bayan:active .bayan__input:hover + label .hide-open,
+    .bayan:hover .bayan__input:checked + label .hide-open,
+    .bayan:hover .plus-open {
+        font-size: 1rem;
     }
 }
