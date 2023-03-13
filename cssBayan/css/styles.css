@@ -141,3 +141,39 @@ label:hover {
     width: 100%;
     border-radius: 20px;
 }
+
+.bayan__item:active .title {
+    color: #fffb00;
+    cursor: wait;
+}
+
+label:active {
+    color: #fffb00;
+    cursor: wait;
+}
+
+.bayan__item:active .open {
+    color: #fffb00;
+}
+
+.bayan__item:active input:checked+label .title {
+    color: #fffb00;
+}
+
+label:active {
+    cursor: wait;
+}
+
+.bayan__item:active .title {
+    color: #fffb00;
+    cursor: wait;
+}
+
+.bayan__item:active .open {
+    color: #fffb00;
+    font-size: 0;
+}
+
+.bayan__item:active .bayan__image {
+    opacity: .4;
+}
