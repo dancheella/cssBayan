@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(18, 14, 106, 0.84);
+    padding: 1.25rem;
+}
+
+.header__title {
+    color: #000000;
+    font-size: 2.5rem;
+    font-family: GilroyBold, sans-serif;
+    margin-bottom: 1.9rem;
+}
+
+.bayan {
+    padding: 2.5rem;
+    background-color: rgba(241, 177, 0, 0.84);
+    border-radius: 3.75rem;
+}
+
+.bayan:hover .title {
+    color: #000000;
+}
+
+.bayan:hover .hide-open {
+    font-size: 0;
+    color: #830d0d;
+    transition: all .5s ease-in;
+}
+
+.bayan:hover .plus-open {
+    margin-left: auto;
+    color: #000000;
+    font-size: 1.9rem;
+    transition: all .5s ease-in;
+}
+
+.bayan:hover .bayan__input:checked + label .hide-open {
+    font-size: 1.9rem;
+    transition: all .5s ease-in;
+}
+
+.bayan:hover .bayan__input:hover + label .plus-open,
+.bayan:active .bayan__input:hover + label .plus-open{
+    font-size: 0;
+}
+
+.bayan:hover .bayan__input:hover + label .hide-open,
+.bayan:active .bayan__input:hover + label .hide-open{
+    font-size: 1.9rem;
+}
+
+.bayan__item {
+    width: 62.5rem;
+    border-top: 0.1rem solid rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.bayan__input {
+    display: none;
+}
+
+.bayan__input + label .bayan__image {
+    max-width: 0;
+}
+
+.bayan__input:checked + label .bayan__image,
+.bayan__input:hover + label .bayan__image {
+    max-width: 25rem;
+    transition: all .5s ease-in;
+    padding: 0.7rem;
+}
+
+.bayan__input:checked + label .title {
+    color: #830d0d;
+}
+
+.bayan__input:checked + label .plus-open {
+    font-size: 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.bayan__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title {
+    font-family: Gilroy, sans-serif;
+    font-size: 1.9rem;
+}
+
+.open {
+    font-family: Gilroy, sans-serif;
+}
+
+.hide-open {
+    font-size: 0;
+}
+
+.plus-open {
+    font-size: 0;
+}
+
+.bayan__image-img {
+    max-width: 25rem;
+    width: 100%;
+    border-radius: 1.6rem;
+}
+
+.bayan__item:active .title {
+    color: #fffb00;
+    cursor: wait;
+}
+
+label:active {
+    color: #fffb00;
+    cursor: wait;
+}
+
+.bayan__item:active .open {
+    color: #fffb00;
+}
+
+.bayan__item:active input:checked+label .title {
+    color: #fffb00;
+}
+
+label:active {
+    cursor: wait;
+}
+
+.bayan__item:active .title {
+    color: #fffb00;
+    cursor: wait;
+}
+
+.bayan__item:active .open {
+    color: #fffb00;
+    font-size: 0;
+}
+
+.bayan__item:active .bayan__image {
+    opacity: .4;
+}
